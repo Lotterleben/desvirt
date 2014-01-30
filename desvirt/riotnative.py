@@ -42,7 +42,7 @@ class RIOT():
 
     def create(self):
         port_number = get_free_tcp_port(logger=self.logger)
-        start_riot = "%s %s -t %d -d" % (self.binary, self.tap, port_number)
+        start_riot = "%s %s -t %d -d -E" % (self.binary, self.tap, port_number)
         self.logger.info("Start the RIOT: %s" % start_riot)
         try:
             output = subprocess.check_output(start_riot, shell=True)
