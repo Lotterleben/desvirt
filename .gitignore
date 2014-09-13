@@ -32,3 +32,15 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
+
+# grid info
+.desvirt/*.xml
+*.lock
+*.macs
+*.pids
+*.taps
+ports.list
+
+# Mac OS
+.DS_Store
+._*
